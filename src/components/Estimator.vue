@@ -11,6 +11,7 @@ const seconds = [
     60 * 60 * 4, // 4 hours
     60 * 60 * 8, // 1 working day
     60 * 60 * 16, // 2 working days
+    60 * 60 * 8 * 3.5, // 3.5 working days
     60 * 60 * 40, // 1 working week
 ]
 const showOverflow = ref(false)
