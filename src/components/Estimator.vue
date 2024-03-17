@@ -65,7 +65,7 @@ shiftPosition()
             </div>
         </div>
         <div class="result" v-if="showResultScreen">
-            <h1>Your estimate is <b>{{ (seconds[postition] / 60 / 60) * 1.25 }} hours</b>.</h1>
+            <h1>Your estimate is <b>{{ Math.ceil( (seconds[postition] / 60 / 60) * 1.25) }} hours</b>.</h1>
         </div>
     </div>
 </template>
