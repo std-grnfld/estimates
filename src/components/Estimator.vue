@@ -51,7 +51,7 @@ shiftPosition()
 
             <div class="estimate" v-if="!showOverflow">
                 <h1>If I start with the task <b>right now</b> I can deliver it by <b>{{ date }}</b>.</h1>
-                <button @click="showResult()" class="p-2 bg-green-300 rounded-xl mr-4">yes</button>
+                <button @click="showResult()" class="p-2 bg-green-300 rounded-xl mr-4">Yes</button>
                 <button @click="shiftPosition()" class="p-2 bg-red-700 text-white rounded-xl">No</button>
                 <h2>Assumptions:</h2>
                 <ul>
@@ -62,7 +62,7 @@ shiftPosition()
             </div>
             <div class="no-estimate" v-if="showOverflow">
                 <h1>
-                    Tell your manager that needs to be broken up into smaller pieces</h1>
+                    Tell your manager that the "task" needs to be broken up into smaller pieces</h1>
             </div>
         </div>
         <div class="result" v-if="showResultScreen">
